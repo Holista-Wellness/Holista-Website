@@ -13,6 +13,37 @@ window.HOLISTA = {
   },
   articles: [
     {
+      slug: "high-egg-intake-masculinizing-traits-women",
+      title: "Could High Egg Intake Influence Masculinizing Traits in Women? A Nutritional Hypothesis",
+      category: "Nutrition",
+      art: "high-egg-intake",
+      image: "assets/images/articles/high-egg-intake-masculinizing-traits.png",
+      author: "Kate Thompson",
+      date: "2026-05-19",
+      updatedDate: "2026-05-19",
+      readTime: "7 min read",
+      featured: true,
+      excerpt:
+        "A measured look at eggs, cholesterol, protein, strength training, and the larger lifestyle patterns people sometimes mistake for hormonal transformation.",
+      takeaways: [
+        "Eggs provide protein, cholesterol, and micronutrients involved in normal tissue-building and hormone pathways.",
+        "Visible changes attributed to eggs are more likely to reflect the whole strength-focused routine around them.",
+        "The hypothesis is speculative, and the cultural reading of strength as masculine deserves its own scrutiny."
+      ],
+      content: [
+        "Eggs have long been promoted as one of the most biologically complete foods in the human diet. They contain high-quality protein, cholesterol, fat-soluble vitamins, choline, selenium, iodine, and a range of bioactive compounds involved in cellular growth and hormone production. For most people, this makes eggs a convenient and nutrient-dense food. But as high-protein diets become more popular, some have begun asking whether excessive egg intake could influence traits commonly associated with androgenic activity, such as increased muscle mass, oilier skin, increased body hair, and a more \"masculinized\" appearance.",
+        "The theoretical concern begins with the role of cholesterol. Cholesterol is the structural precursor for steroid hormones, including testosterone, estrogen, progesterone, cortisol, and aldosterone. Because eggs are naturally rich in cholesterol, it is tempting to speculate that a high-egg diet could provide additional substrate for steroid hormone synthesis. In this model, frequent egg consumption would not directly \"contain\" testosterone, but could theoretically support a hormonal environment more permissive to androgen production.",
+        "Protein is another piece of the discussion. Eggs provide a complete amino acid profile, including leucine, which plays a role in activating muscle protein synthesis through the mTOR pathway. In someone who is also strength training, eating multiple eggs per day could contribute to increased lean muscle development by improving recovery and providing adequate building blocks for tissue growth. Over time, this could create a more muscular physique, which may be interpreted socially as a masculinizing change.",
+        "There is also the question of insulin and growth signaling. High-protein meals can influence satiety hormones, insulin dynamics, and overall metabolic tone. A diet centered heavily around eggs, especially when paired with resistance training and calorie surplus, may support an anabolic state. \"Anabolic\" simply means tissue-building, but because increased muscle mass is culturally associated with masculinity, this can create the appearance of masculinization even without a true hormonal disorder.",
+        "Body hair is where the theory becomes more speculative. Hair growth in androgen-sensitive areas is largely influenced by genetics, androgen receptor sensitivity, and hormones such as testosterone and dihydrotestosterone. A high-egg diet alone would not be expected to override these systems. However, in a hypothetical nutrition model, one could argue that if egg intake contributed to a broader androgen-supportive environment, it might amplify preexisting tendencies toward coarser or darker body hair in genetically susceptible individuals.",
+        "The same argument is sometimes extended to skin changes. Androgens increase sebaceous gland activity, which can contribute to oilier skin and acne. Since eggs are associated with nutrient density, cholesterol intake, and high-protein fitness diets, they may be blamed when someone notices increased acne or skin oiliness after changing their diet. However, these changes would likely involve multiple factors, including hormones, stress, training intensity, sleep, total calorie intake, and genetics.",
+        "The key point is that eggs rarely exist in isolation. A woman eating six eggs per day is often not just eating eggs. She may also be lifting weights, increasing total protein, eating fewer refined carbohydrates, tracking macros, drinking more caffeine, and deliberately pursuing a stronger physique. The eggs become a visible symbol of a larger lifestyle shift toward performance, strength, and body recomposition.",
+        "So when people ask whether eggs can cause \"manly features,\" the more precise answer is that eggs could theoretically support some of the nutritional conditions associated with muscle growth and anabolic metabolism. They provide protein, cholesterol, and micronutrients that participate in normal hormone and tissue-building pathways. But the visible changes often attributed to eggs are more likely the result of the entire lifestyle pattern surrounding them.",
+        "In that sense, eggs may not be the direct cause of masculinization, but they may act as a nutritional amplifier within a broader strength-focused routine. The more eggs become associated with gym culture, high-protein eating, and body transformation, the easier it becomes to frame them as a food that pushes the body toward a harder, stronger, more traditionally masculine presentation.",
+        "Still, the concern reflects a deeper cultural discomfort. When women become stronger, more muscular, more confident, or more physically assertive, those traits are often labeled as masculine rather than simply healthy or powerful. Eggs may be taking the blame for a transformation that is really about nourishment, training, and self-possession."
+      ]
+    },
+    {
       slug: "desk-sauna-theory",
       title: "The Desk Sauna Theory: Can Answering Email Under a Blanket Count as Heat Therapy?",
       category: "Workplace Wellness",
