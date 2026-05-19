@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articles | Holista</title>
+    <meta
+      name="description"
+      content="Browse Holista articles on sleep rituals, weight-loss habits, skin-care habits, and playful wellness routines."
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="articles">
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html" aria-label="Holista home">
+          <span class="brand__title" data-site-brand>Holista</span>
+          <span class="brand__leaf" aria-hidden="true"></span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="articles.html" aria-current="page">Articles</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button class="search-button" type="button" aria-label="Search site"></button>
+          <a class="button button--small" href="index.html#newsletter">Subscribe</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <section class="page-hero">
+          <div class="page-hero__copy">
+            <p class="eyebrow">Articles</p>
+            <h1>Every tiny ritual, investigated with unreasonable elegance.</h1>
+            <p class="lede">
+              Explore wellness-blog features with a polished voice, a lightly comical edge, and enough ritual language
+              to make a glass of water feel like a publishing event.
+            </p>
+            <div class="category-pills" id="categories">
+              <a href="categories.html#sleep">Sleep</a>
+              <a href="categories.html#weight-loss">Weight Loss</a>
+              <a href="categories.html#skin-care">Skin Care</a>
+              <a href="categories.html#wellness-hacks">Wellness Hacks</a>
+              <a href="categories.html#movement">Movement</a>
+            </div>
+          </div>
+          <div class="page-hero__visual hero-visual--photo" aria-hidden="true">
+            <img
+              class="hero-visual__image hero-visual__image--articles"
+              src="assets/images/hero-articles.jpg"
+              alt=""
+            />
+          </div>
+        </section>
+
+        <div class="story-grid story-grid--library" id="all-articles"></div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div>
+          <p class="footer-brand" data-site-brand>Holista</p>
+          <p class="footer-note">
+            Practical wellness stories covering sleep rituals, skin-care habits, weight-loss habits, and gently
+            over-serious health hacks.
+          </p>
+        </div>
+        <div>
+          <p class="footer-heading">Explore</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="articles.html">Articles</a>
+            <a href="about.html">About Kate</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-heading">Topics</p>
+          <div class="footer-links">
+            <a href="categories.html#sleep">Sleep</a>
+            <a href="categories.html#weight-loss">Weight Loss</a>
+            <a href="categories.html#skin-care">Skin Care</a>
+            <a href="categories.html">All Categories</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-heading">Policies</p>
+          <div class="footer-links">
+            <a href="editorial-policy.html">Editorial Policy</a>
+            <a href="medical-disclaimer.html">Medical Disclaimer</a>
+            <a href="privacy.html">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span id="year"></span> Holista</span>
+        <span>Thoughtful wellness stories for everyday life.</span>
+      </div>
+    </footer>
+
+    <script src="assets/js/content.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
