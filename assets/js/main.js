@@ -102,10 +102,37 @@ function buildArticleCard(article, variant = "feature") {
     <article class="${cardClass}">
       ${buildStoryMedia(article)}
       <div class="story-card__body">
-        <p class="story-card__category">${article.category}</p>
-        <h3><a href="article.html?slug=${article.slug}">${article.title}</a></h3>
-        <p class="story-card__excerpt">${article.excerpt}</p>
-        <p class="meta">${formatDate(article.date)} <span aria-hidden="true">•</span> ${article.readTime}</p>
+        <p class="story-card__category">${escapeHtml(article.category)}</p>
+        <h3><a href="article.html?slug=${article.slug}">${escapeHtml(article.title)}</a></h3>
+        <p class="story-card__excerpt">${escapeHtml(article.excerpt)}</p>
+        <p class="story-card__byline">By ${escapeHtml(article.author)}</p>
+        <p class="meta">${formatDate(article.date)} <span aria-hidden="true">•</span> ${escapeHtml(article.readTime)}</p>
+      </div>
+    </article>
+  `;
+}
+
+function buildFeaturedArticle(article) {
+  if (!article) {
+    return "";
+  }
+
+  return `
+    <article class="featured-story">
+      <a class="featured-story__media" href="article.html?slug=${article.slug}" aria-label="Read ${escapeAttribute(article.title)}">
+        ${article.image ? `<img src="${article.image}" alt="${escapeAttribute(`Editorial image for ${article.title}`)}" loading="lazy" />` : ""}
+        <span class="featured-story__label">Latest</span>
+      </a>
+      <div class="featured-story__body">
+        <p class="story-card__category">${escapeHtml(article.category)}</p>
+        <h3><a href="article.html?slug=${article.slug}">${escapeHtml(article.title)}</a></h3>
+        <p class="story-card__excerpt">${escapeHtml(article.excerpt)}</p>
+        <div class="featured-story__meta">
+          <span>By ${escapeHtml(article.author)}</span>
+          <span>${formatDate(article.date)}</span>
+          <span>${escapeHtml(article.readTime)}</span>
+        </div>
+        <a class="button" href="article.html?slug=${article.slug}">Read latest article</a>
       </div>
     </article>
   `;
@@ -153,9 +180,20 @@ function renderPopularArticles() {
   }
 
   popularEl.innerHTML = sortArticlesNewestFirst(articles)
-    .slice(0, 3)
+    .slice(1, 4)
     .map((article) => buildArticleCard(article, "feature"))
     .join("");
+}
+
+function renderFeaturedArticle(targetId) {
+  const { articles } = getSiteData();
+  const targetEl = document.getElementById(targetId);
+
+  if (!targetEl) {
+    return;
+  }
+
+  targetEl.innerHTML = buildFeaturedArticle(sortArticlesNewestFirst(articles)[0]);
 }
 
 function renderIssueRail() {
@@ -190,7 +228,7 @@ function renderRecentArticles() {
   }
 
   recentEl.innerHTML = sortArticlesNewestFirst(articles)
-    .slice(3, 6)
+    .slice(4, 7)
     .map((article) => buildArticleCard(article, "stacked"))
     .join("");
 }
@@ -204,6 +242,7 @@ function renderAllArticles() {
   }
 
   articlesEl.innerHTML = sortArticlesNewestFirst(articles)
+    .slice(1)
     .map((article) => buildArticleCard(article, "stacked"))
     .join("");
 }
@@ -459,7 +498,7 @@ function createSearchOverlay() {
 
 function initScrollReveal() {
   const targets = document.querySelectorAll(
-    ".hero-shell, .page-hero, .section-heading, .story-card, .feature-card, .cta-band, .contact-card, .info-card, .about-value, .article-body, .article-side-card, .category-section"
+    ".hero-shell, .page-hero, .section-heading, .featured-story, .story-card, .feature-card, .cta-band, .contact-card, .info-card, .about-value, .article-body, .article-side-card, .category-section"
   );
 
   targets.forEach((element) => element.classList.add("reveal"));
@@ -495,11 +534,13 @@ function init() {
   if (page === "home") {
     setHomeCopy();
     renderIssueRail();
+    renderFeaturedArticle("home-featured-article");
     renderPopularArticles();
     renderRecentArticles();
   }
 
   if (page === "articles") {
+    renderFeaturedArticle("articles-featured-article");
     renderAllArticles();
   }
 

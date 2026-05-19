@@ -3,13 +3,13 @@ window.HOLISTA = {
     name: "Holista",
     description:
       "A polished wellness magazine covering sleep rituals, skin-care habits, weight-loss habits, and gently over-serious health hacks.",
-    heroEyebrow: "The rituals are tiny. The tone is serious.",
-    heroTitle: "Wellness rituals for people who moisturize with <em>discernment.</em>",
+    heroEyebrow: "Modern wellness, thoughtfully edited",
+    heroTitle: "Practical rituals for calmer, better everyday routines.",
     heroDescription:
-      "Holista treats micro-habits, beauty lore, and internet health hacks with the exact amount of polish they probably do not deserve.",
+      "Holista covers small wellness habits, beauty lore, and internet health trends with clarity, warmth, and a measured sense of humor.",
     newsletterTitle: "Join the Holista community",
     newsletterCopy:
-      "Get weekly wellness stories, suspiciously elegant rituals, skin-care habits, and delightfully over-serious health hacks delivered to your inbox."
+      "Get weekly wellness stories, practical rituals, skin-care habits, and thoughtful health ideas delivered to your inbox."
   },
   articles: [
     {

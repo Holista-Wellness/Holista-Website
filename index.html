@@ -39,19 +39,19 @@
         <div class="container">
           <div class="hero-shell">
             <div class="hero-copy">
-              <p class="eyebrow" id="hero-eyebrow">Everyday wellness, edited beautifully</p>
-              <h1 id="hero-title">Popular health habits for a better you, naturally.</h1>
+              <p class="eyebrow" id="hero-eyebrow">Modern wellness, thoughtfully edited</p>
+              <h1 id="hero-title">Practical rituals for calmer, better everyday routines.</h1>
               <p class="lede" id="hero-description">
-                Sleep rituals, skin-care habits, and lightly theatrical wellness stories that feel believable enough to
-                try and funny enough to remember.
+                Sleep rituals, skin-care habits, and small wellness stories that feel useful enough to try and memorable
+                enough to keep.
               </p>
               <div class="hero-actions">
                 <a class="button" href="articles.html">Explore Articles</a>
                 <a class="button-secondary" href="about.html">Meet Kate</a>
               </div>
               <div class="hero-proof" aria-label="Holista editorial highlights">
-                <span><strong>14</strong> field-tested-ish rituals</span>
-                <span><strong>4</strong> fresh health hacks</span>
+                <span><strong>14</strong> practical wellness reads</span>
+                <span><strong>4</strong> new editorial picks</span>
                 <span><strong>0</strong> miracle cures promised</span>
               </div>
             </div>
@@ -63,11 +63,11 @@
               />
               <div class="hero-note hero-note--top">
                 <span>Editor pick</span>
-                <strong>Sleep rituals that feel calm, not clinical.</strong>
+                <strong>Sleep rituals that feel calm and realistic.</strong>
               </div>
               <div class="hero-note hero-note--bottom">
                 <span>Fresh issue</span>
-                <strong>Small habits, beautifully explained.</strong>
+                <strong>Small habits, clearly explained.</strong>
               </div>
             </div>
           </div>
@@ -94,8 +94,21 @@
         <div class="container">
           <div class="section-heading">
             <div>
+              <p class="eyebrow">Latest Feature</p>
+              <h2>The newest story from Holista.</h2>
+            </div>
+            <a class="text-link" href="articles.html">Browse all articles</a>
+          </div>
+          <div id="home-featured-article"></div>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
+          <div class="section-heading">
+            <div>
               <p class="eyebrow">Popular This Week</p>
-              <h2>Beautifully serious coverage of tiny, suspiciously branded habits.</h2>
+              <h2>Thoughtful coverage of small habits worth revisiting.</h2>
             </div>
             <a class="text-link" href="articles.html">View all articles</a>
           </div>
@@ -166,7 +179,7 @@
           <div class="section-heading">
             <div>
               <p class="eyebrow">Latest</p>
-              <h2>Fresh reads with comforting logic and a controlled amount of drama.</h2>
+              <h2>Fresh reads with practical logic and a calm editorial voice.</h2>
             </div>
             <a class="text-link" href="articles.html">Browse the library</a>
           </div>
@@ -188,10 +201,12 @@
                 </p>
               </div>
             </div>
-            <div class="newsletter-invite">
-              <p>To join the newsletter, email Holista with the phrase <strong>Add Me</strong>.</p>
-              <a href="mailto:holistahealthwellness@gmail.com?subject=Add%20Me">holistahealthwellness@gmail.com</a>
-            </div>
+            <form class="newsletter-form" action="mailto:holistahealthwellness@gmail.com?subject=Join%20Holista%20Newsletter" method="post" enctype="text/plain">
+              <label class="sr-only" for="newsletter-email">Email address</label>
+              <input id="newsletter-email" name="email" type="email" placeholder="Email address" autocomplete="email" required />
+              <button class="button" type="submit">Subscribe</button>
+              <p>Weekly notes from Holista. No miracle claims, no inbox clutter.</p>
+            </form>
           </div>
         </div>
       </section>
