@@ -498,7 +498,7 @@ function createSearchOverlay() {
 
 function initScrollReveal() {
   const targets = document.querySelectorAll(
-    ".hero-shell, .page-hero, .section-heading, .featured-story, .story-card, .feature-card, .cta-band, .contact-card, .info-card, .about-value, .article-body, .article-side-card, .category-section"
+    ".hero-shell, .page-hero, .section-heading, .featured-story, .story-card, .feature-card, .cta-band, .contact-card, .info-card, .about-value, .article-side-card, .category-section"
   );
 
   targets.forEach((element) => element.classList.add("reveal"));
