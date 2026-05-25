@@ -99,16 +99,16 @@ function buildArticleCard(article, variant = "feature") {
     variant === "stacked" ? "story-card story-card--stacked" : "story-card story-card--feature";
 
   return `
-    <article class="${cardClass}">
+    <a class="${cardClass}" href="article.html?slug=${article.slug}" aria-label="Read ${escapeAttribute(article.title)}">
       ${buildStoryMedia(article)}
       <div class="story-card__body">
         <p class="story-card__category">${escapeHtml(article.category)}</p>
-        <h3><a href="article.html?slug=${article.slug}">${escapeHtml(article.title)}</a></h3>
+        <h3>${escapeHtml(article.title)}</h3>
         <p class="story-card__excerpt">${escapeHtml(article.excerpt)}</p>
         <p class="story-card__byline">By ${escapeHtml(article.author)}</p>
         <p class="meta">${formatDate(article.date)} <span aria-hidden="true">•</span> ${escapeHtml(article.readTime)}</p>
       </div>
-    </article>
+    </a>
   `;
 }
 
